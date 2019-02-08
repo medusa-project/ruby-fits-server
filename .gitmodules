@@ -1,0 +1,3 @@
+[submodule "fits-tool"]
+	path = fits-tool
+	url = https://github.com/medusa-project/fits-tool.git

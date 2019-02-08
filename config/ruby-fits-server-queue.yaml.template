@@ -1,0 +1,30 @@
+#server and amqp stanzas are mandatory for a SimpleAmqpServer
+server:
+  name: ruby-fits-server
+amqp:
+  #queues for communication to and from caller. As expected, receive on incoming_queue and send result on outgoing_queue
+  incoming_queue: medusa_to_fits
+  outgoing_queue: fits_to_medusa
+  #Connection information, passed directly to Bunny.new, whose defaults are used for anything missing
+  #Note that Bunny will want these as symbols, so the YAML should reflect that
+  connection:
+    :port: 5672
+log:
+  level: :info
+#TODO remove when obsoleted by medusa_storage
+content:
+  #File paths passed to the server are relative to this path
+  root: /path/to/content/root
+#In some circumstances (e.g. EC2) the system tmpdir may not be suitable, and can be replaced here. This config is for a MedusaStorage::TmpDirPicker. You can
+#omit to always use the system tmpdir.
+tmp_dir_picker:
+  -
+    - 100000000
+    - /tmp
+#Configure medusa_storage gem. Note that some keys have to be symbols
+medusa_storage:
+  default_root: dev
+  roots:
+    - :name: dev
+    - :type: filesystem
+    - :path: /path/to/content/root
