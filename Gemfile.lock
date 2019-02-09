@@ -1,8 +1,8 @@
 GIT
   remote: https://github.com/medusa-project/medusa_storage.git
-  revision: fc19ced981fcf729247ec30eea7c30dfbfc6b9a3
+  revision: d2c9316f6d292e9b87d2c32c14d40dca166ea53c
   specs:
-    medusa_storage (0.4.0)
+    medusa_storage (0.6.1)
       aws-sdk-s3
       hex_string
       io-like
@@ -10,13 +10,14 @@ GIT
 
 GIT
   remote: https://github.com/medusa-project/simple-queue-server.git
-  revision: 207032950562288223a01c525d888fc8795ebe9e
+  revision: 847faf7a3a619e69016c82b19aa21a4ab6fff2d7
   specs:
     simple-queue-server (2.2.1)
       aws-sdk-sqs
       bunny
       config
       logging
+      march_hare
       retryable
       uuid
 
@@ -30,21 +31,21 @@ GEM
       tzinfo (~> 1.1)
     amq-protocol (2.3.0)
     aws-eventstream (1.0.1)
-    aws-partitions (1.104.0)
-    aws-sdk-core (3.27.0)
+    aws-partitions (1.136.0)
+    aws-sdk-core (3.46.0)
       aws-eventstream (~> 1.0)
       aws-partitions (~> 1.0)
       aws-sigv4 (~> 1.0)
       jmespath (~> 1.0)
-    aws-sdk-kms (1.9.0)
-      aws-sdk-core (~> 3, >= 3.26.0)
+    aws-sdk-kms (1.13.0)
+      aws-sdk-core (~> 3, >= 3.39.0)
       aws-sigv4 (~> 1.0)
-    aws-sdk-s3 (1.19.0)
-      aws-sdk-core (~> 3, >= 3.26.0)
+    aws-sdk-s3 (1.30.1)
+      aws-sdk-core (~> 3, >= 3.39.0)
       aws-sdk-kms (~> 1)
       aws-sigv4 (~> 1.0)
-    aws-sdk-sqs (1.9.0)
-      aws-sdk-core (~> 3, >= 3.26.0)
+    aws-sdk-sqs (1.10.0)
+      aws-sdk-core (~> 3, >= 3.39.0)
       aws-sigv4 (~> 1.0)
     aws-sigv4 (1.0.3)
     bunny (2.13.0)
@@ -94,27 +95,27 @@ GEM
       multi_json (~> 1.10)
     macaddr (1.7.1)
       systemu (~> 2.6.2)
+    march_hare (3.1.1-java)
     minitest (5.11.3)
     multi_json (1.13.1)
-    mustermann (1.0.2)
-    parallel (1.12.1)
+    mustermann (1.0.3)
+    parallel (1.13.0)
     passenger (6.0.1)
       rack
       rake (>= 0.8.1)
     rack (2.0.6)
-    rack-protection (2.0.2)
+    rack-protection (2.0.5)
       rack
     rake (12.3.2)
     retryable (3.0.3)
-    sinatra (2.0.2)
+    sinatra (2.0.5)
       mustermann (~> 1.0)
       rack (~> 2.0)
-      rack-protection (= 2.0.2)
+      rack-protection (= 2.0.5)
       tilt (~> 2.0)
     systemu (2.6.5)
-    thread_safe (0.3.6)
     thread_safe (0.3.6-java)
-    tilt (2.0.8)
+    tilt (2.0.9)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
     uuid (2.3.9)
@@ -122,7 +123,6 @@ GEM
 
 PLATFORMS
   java
-  ruby
 
 DEPENDENCIES
   medusa_storage!
@@ -131,4 +131,4 @@ DEPENDENCIES
   sinatra
 
 BUNDLED WITH
-   1.17.2
+   2.0.1
