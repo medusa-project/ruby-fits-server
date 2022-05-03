@@ -17,7 +17,6 @@ GIT
       bunny
       config
       logging
-      march_hare
       retryable
       uuid
 
@@ -96,27 +95,29 @@ GEM
       multi_json (~> 1.10)
     macaddr (1.7.1)
       systemu (~> 2.6.2)
-    march_hare (3.1.1-java)
     minitest (5.11.3)
     multi_json (1.13.1)
-    mustermann (1.0.3)
+    mustermann (1.1.1)
+      ruby2_keywords (~> 0.0.1)
     parallel (1.17.0)
     passenger (6.0.1)
       rack
       rake (>= 0.8.1)
-    rack (2.0.6)
-    rack-protection (2.0.5)
+    rack (2.2.3)
+    rack-protection (2.2.0)
       rack
     rake (12.3.2)
     retryable (3.0.3)
-    sinatra (2.0.5)
+    ruby2_keywords (0.0.5)
+    sinatra (2.2.0)
       mustermann (~> 1.0)
-      rack (~> 2.0)
-      rack-protection (= 2.0.5)
+      rack (~> 2.2)
+      rack-protection (= 2.2.0)
       tilt (~> 2.0)
     systemu (2.6.5)
+    thread_safe (0.3.6)
     thread_safe (0.3.6-java)
-    tilt (2.0.9)
+    tilt (2.0.10)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
     uuid (2.3.9)
@@ -124,6 +125,7 @@ GEM
 
 PLATFORMS
   java
+  x86_64-linux
 
 DEPENDENCIES
   medusa_storage!
