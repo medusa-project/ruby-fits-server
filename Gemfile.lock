@@ -17,7 +17,6 @@ GIT
       bunny
       config
       logging
-      march_hare
       retryable
       uuid
 
@@ -89,14 +88,13 @@ GEM
     i18n (1.5.3)
       concurrent-ruby (~> 1.0)
     io-like (0.3.0)
-    jmespath (1.4.0)
+    jmespath (1.6.1)
     little-plugger (1.1.4)
     logging (2.2.2)
       little-plugger (~> 1.1)
       multi_json (~> 1.10)
     macaddr (1.7.1)
       systemu (~> 2.6.2)
-    march_hare (3.1.1-java)
     minitest (5.11.3)
     multi_json (1.13.1)
     mustermann (1.0.3)
@@ -115,6 +113,7 @@ GEM
       rack-protection (= 2.0.5)
       tilt (~> 2.0)
     systemu (2.6.5)
+    thread_safe (0.3.6)
     thread_safe (0.3.6-java)
     tilt (2.0.9)
     tzinfo (1.2.5)
@@ -124,6 +123,7 @@ GEM
 
 PLATFORMS
   java
+  x86_64-linux
 
 DEPENDENCIES
   medusa_storage!
